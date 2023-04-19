@@ -1,21 +1,5 @@
-# **Code Muncher**
-### An interactive learning game, based around 3 coding languages used to create the application.
-
-## **Intro**
-
-> ### Hello there and Welcome to Code Muncher!
-> 
-> ### In this game you can move and eat HTML5 Codes,
-> ### delicious JavaScript and CSS.
->
-> ### And all that by just pushing your arrow keys.
-> ### When you eat the element or term, a pop-up will appear.
-> ### this pop up contains explains what the function the element has or what it does.
->
-> ### you can close that pop up at any time, and the game will continue.
->
-> ### when the game is finished and completed,
-> ### a list will appear with the same info you have seen in the pop-ups
+# **HTML5 Game**
+### An interactive learning game, based around the HTML5 coding language.
 
 #### *Application made for Artevelde University of Aplied Sciences* 
 #### *by Mila Duterloo and Brecht Van Damme*

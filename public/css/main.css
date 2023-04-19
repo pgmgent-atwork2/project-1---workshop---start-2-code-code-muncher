@@ -1,17 +1,132 @@
-html,
-body {
-  background: linear-gradient(112deg, #2EA7FF 0%, #B45F2F 100%);
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
+.movingDiv {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background-color: #CCC;
 }
 
-.gameFrame {
-  position: relative;
-  width: 1047px;
-  height: 543px;
-  left: calc(50% - 1047px/2 + 0.5px);
-  top: calc(50% - 543px/2 + 0.5px);
+#divMovingDiv.movingDiv {
+  top: 1rem;
+  left: 0;
+}
 
-  background: radial-gradient(69.71% 69.71% at 50.05% 30.29%, #494949 0%, #5B5B5B 35.21%);
+body {
+
+  background: rgb(238, 174, 202);
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.element {
+  height: 50px;
+  position: absolute;
+  /* background-color: rgb(192, 8, 8); */
+  border-radius: 50%;
+}
+
+.element1 {
+  position: fixed;
+  top: 200px;
+  left: 100px;
+  height: 200px;
+}
+
+.element2 {
+  position: fixed;
+  top: 150px;
+  right: 100px;
+  height: 150px;
+  /* background-color: blue; */
+  border-radius: 50%;
+}
+
+.element3 {
+  position: fixed;
+  bottom: 50px;
+  left: 50px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+}
+
+.element5 {
+  position: fixed;
+  top: 200px;
+  right: 600px;
+  height: 120px;
+  background-color: yellow;
+  border-radius: 50%;
+}
+
+.element6 {
+  position: fixed;
+  bottom: 200px;
+  right: 200px;
+  width: 180px;
+  height: 180px;
+
+}
+
+.element7 {
+  position: fixed;
+  top: 400px;
+  left: 200px;
+  width: 80px;
+  height: 80px;
+
+}
+
+.element8 {
+  position: fixed;
+  top: 500px;
+  right: 800px;
+
+
+  height: 160px;
+  border-radius: 50%;
+
+}
+
+.element9 {
+  position: fixed;
+  bottom: 100px;
+  right: 900px;
+  height: 50px;
+  background-color: brown;
+  border-radius: 50%;
+}
+
+
+.element10 {
+  position: fixed;
+  bottom: 300px;
+  left: 300px;
+  width: 90px;
+  height: 90px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+img {
+  width: 100px;
+  object-fit: cover;
+}
+
+
+
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: black;
+  position: absolute;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #04AA6D;
 }
