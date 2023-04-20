@@ -32,6 +32,8 @@ window.onload = function () {
     const moveDiv = document.getElementById("movingDiv");
     moveDiv.style.top = '1rem';
     moveDiv.style.left = '0rem';
+// Eerst wordt het bewegende div-element geselecteerd en de beginpositie wordt ingesteld op de bovenkant van het scherm. 
+    
     window.onkeydown = function (e) {
         e.preventDefault();
         if (!e) {
@@ -56,6 +58,9 @@ window.onload = function () {
             moveDiv.style.top = (parseInt(moveDiv.style.top, 10) + speed) + 'px';
         }
 
+        // Vervolgens wordt er een eventlistener toegevoegd aan het venster die reageert op de toetsen van het toetsenbord. Wanneer er een toets wordt ingedrukt en losgelaten, wordt de functie uitgevoerd die de positie van het bewegende div-element aanpast op basis van de toetsen die zijn ingedrukt.
+        // de elk nummer staat voor een toetsbord nummer 
+
         console.log(4);
         otherElements.forEach(function (element) {
             const moveRect = moveDiv.getBoundingClientRect();
@@ -68,7 +73,9 @@ window.onload = function () {
             }
         });
 
-        //
+        // Dit is een forEach-loop die over elk element in de otherElements array loopt. 
+        // Voor elk element worden de rechthoeken van de moveDiv en het element vergeleken om te controleren of ze elkaar overlappen dit wordt gecontroleerd door getBoundingClientRect() .
+        // Als de elementen elkaar overlappen en als het element een dataset item heeft, dan wordt het type van het element opgeslagen in een variabele en wordt playSound() en increaseProgressBar() functies aangeroepen met type als argument.
 
 
 
