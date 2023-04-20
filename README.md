@@ -13,6 +13,7 @@
 
 
 #JAVASCRIPT
+Stap 1 als eerste maak je een stukje javascript
 Dit is een stukje JavaScript-code dat wordt uitgevoerd wanneer de pagina volledig is geladen doormiddel van (window.onload).
 
 De code haalt elementen op met de class 'el' en slaat ze op in de variabele otherElements met behulp van de querySelectorAll-methode.
