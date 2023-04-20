@@ -67,7 +67,8 @@ window.onload = function () {
             const elRect = element.getBoundingClientRect();
             if (moveRect.left < elRect.right && moveRect.right > elRect.left && moveRect.top < elRect.bottom && moveRect.bottom > elRect.top && element.dataset.item) {
                 const type = element.dataset.item;
-                alert(type);
+                const text = element.dataset.text
+                alert(text);
                 playSound(type);
                 increaseProgressBar(type);
             }
