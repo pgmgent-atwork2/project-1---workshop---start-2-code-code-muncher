@@ -15,8 +15,6 @@ window.onload = function () {
 
     // selecteer de elementen die we nodig hebben
 
-
-
     const progressBar = document.getElementById("myBar");
 
     // zet de breedte van de progress bar op 0%
