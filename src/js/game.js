@@ -5,7 +5,7 @@ window.onload = function () {
     const audioSource = document.getElementById('audioSource');
 
     function playSound(type) {
-        audioSource.setAttribute('src', `./public/assets/sound/${type}.m4a`);
+        audioSource.setAttribute('src', `../public/assets/sound/${type}.m4a`);
         audio.currentTime = 0; // start the sound from the beginning
         audio.load();
         audio.play(); // play the sound
@@ -32,8 +32,8 @@ window.onload = function () {
     const moveDiv = document.getElementById("movingDiv");
     moveDiv.style.top = '1rem';
     moveDiv.style.left = '0rem';
-// Eerst wordt het bewegende div-element geselecteerd en de beginpositie wordt ingesteld op de bovenkant van het scherm. 
-    
+    // Eerst wordt het bewegende div-element geselecteerd en de beginpositie wordt ingesteld op de bovenkant van het scherm. 
+
     window.onkeydown = function (e) {
         e.preventDefault();
         if (!e) {
