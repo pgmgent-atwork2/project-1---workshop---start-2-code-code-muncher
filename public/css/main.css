@@ -1,8 +1,102 @@
+@font-face {
+  font-family: "nunito";
+  src: url("../fonts/nunito-light.woff2") format("woff2"),
+    url("../fonts/nunito/nunito-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url("../fonts/nunito-regular.woff2") format("woff2"),
+    url("../fonts/nunito/nunito-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url("../fonts/nunito-medium.woff2") format("woff2"),
+    url("../fonts/nunito/nunito-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url("../fonts/nunito-semibold.woff2") format("woff2"),
+    url("../fonts/nunito-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url("../fonts/nunito-bold.woff2") format("woff2"),
+    url("../fonts/nunito/nunito-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "nunito";
+  src: url("../fonts/nunito-italic.woff2") format("woff2"),
+    url("../fonts/nunito-italic.woff2") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: normal;
+}
+
+
+
+/* Geef de header een achtergrondkleur en tekstkleur */
+header {
+  background-color: #ffcce5;
+  color: #333;
+  padding: 1rem;
+}
+
+/* Zorg dat de nav een beetje ruimte heeft aan de boven- en onderkant */
+nav {
+  padding: 10px 0;
+}
+
+/* Maak de linkjes in de nav wit en geef ze een beetje ruimte */
+nav a {
+  color: #333;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+/* Maak de linkjes in de nav wit als erop gehoverd wordt */
+nav a:hover {
+  color: #ccc;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 700;
+}
+
+.intro-text {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+
+
+
+
 .movingDiv {
   width: 100px;
   height: 100px;
   position: absolute;
-  background-color: #CCC;
 }
 
 #divMovingDiv.movingDiv {
@@ -11,28 +105,40 @@
 }
 
 body {
-
+  font-family: "nunito";
+  font-weight: 400;
   background: rgb(238, 174, 202);
   background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+h1 {
+  text-align: center;
+}
+
+
+p {
+  font-size: 16px;
+  max-width: 50rem;
+  text-align: center;
+  color: #333;
 }
 
 .element {
   height: 50px;
   position: absolute;
-  /* background-color: rgb(192, 8, 8); */
   border-radius: 50%;
 }
 
 .element1 {
   position: fixed;
-  top: 200px;
+  top: 300px;
   left: 100px;
   height: 200px;
 }
 
 .element2 {
   position: fixed;
-  top: 150px;
+  top: 400px;
   right: 100px;
   height: 150px;
   /* background-color: blue; */
@@ -44,17 +150,15 @@ body {
   bottom: 50px;
   left: 50px;
   height: 100px;
-  background-color: green;
+  background-color: #e0607e;
   border-radius: 50%;
 }
 
 .element5 {
   position: fixed;
-  top: 200px;
+  top: 350px;
   right: 600px;
   height: 120px;
-  background-color: yellow;
-  border-radius: 50%;
 }
 
 .element6 {
@@ -68,7 +172,7 @@ body {
 
 .element7 {
   position: fixed;
-  top: 400px;
+  top: 600px;
   left: 200px;
   width: 80px;
   height: 80px;
@@ -78,8 +182,7 @@ body {
 .element8 {
   position: fixed;
   top: 500px;
-  right: 800px;
-
+  right: 900px;
 
   height: 160px;
   border-radius: 50%;
@@ -98,12 +201,28 @@ body {
 
 .element10 {
   position: fixed;
-  bottom: 300px;
-  left: 300px;
+  bottom: 150px;
+  left: 400px;
+  width: 90px;
+  height: 90px;
+}
+
+.element11 {
+  position: fixed;
+  bottom: 600px;
+  left: 600px;
   width: 90px;
   height: 90px;
   background-color: gray;
   border-radius: 50%;
+}
+
+.element12 {
+  position: fixed;
+  bottom: 200px;
+  left: 1000px;
+  width: 90px;
+  height: 90px;
 }
 
 img {
@@ -128,5 +247,5 @@ img {
 #myBar {
   width: 1%;
   height: 30px;
-  background-color: #04AA6D;
+  background-color: #e0607e;
 }

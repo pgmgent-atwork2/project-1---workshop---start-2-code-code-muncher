@@ -5,10 +5,13 @@ window.onload = function () {
     const audioSource = document.getElementById('audioSource');
 
     function playSound(type) {
-        audioSource.setAttribute('src', `../../assets/sound/${type}.m4a`);
+        audioSource.setAttribute('src', `./sound/${type}.m4a`);
         audio.currentTime = 0; // start the sound from the beginning
+        audio.load();
         audio.play(); // play the sound
+        console.log(type)
     }
+
 
     // selecteer de elementen die we nodig hebben
 
@@ -17,17 +20,10 @@ window.onload = function () {
     // zet de breedte van de progress bar op 0%
     progressBar.style.width = "0%";
 
-    // update de breedte van de progress bar met de gegeven percentage
-    function updateProgress(percentage) {
-        progressBar.style.width = percentage + "%";
+    function increaseProgressBar() {
+        const currentWidth = parseInt(progressBar.style.width, 10);
+        progressBar.style.width = currentWidth + 10 + "%";
     }
-
-    // test de progress bar door deze in stapjes van 10% te updaten
-    let percentage = 0;
-    setInterval(() => {
-        percentage += 10;
-        updateProgress(percentage);
-    }, 1000);
 
 
     const moveDiv = document.getElementById("movingDiv");
@@ -61,18 +57,16 @@ window.onload = function () {
         otherElements.forEach(function (element) {
             const moveRect = moveDiv.getBoundingClientRect();
             const elRect = element.getBoundingClientRect();
-            // console.log(moveRect, elRect);
-            if (moveRect.left < elRect.right && moveRect.right > elRect.left && moveRect.top < elRect.bottom && moveRect.bottom > elRect.top) {
+            if (moveRect.left < elRect.right && moveRect.right > elRect.left && moveRect.top < elRect.bottom && moveRect.bottom > elRect.top && element.dataset.item) {
                 const type = element.dataset.item;
                 alert(type);
                 playSound(type);
-
-
-
-
-                // console.log(element.className);
+                increaseProgressBar(type);
             }
         });
+
+
+
     };
 };
 

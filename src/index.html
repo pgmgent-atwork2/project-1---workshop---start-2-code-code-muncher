@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/reset.css">
     <link rel="stylesheet" href="../public/css/main.css">
 
     <title>Arrow key movements</title>
@@ -12,78 +13,164 @@
 
 
 
+
 <body>
-    <h1>In deze game leg ik een aantal veelgebruikte HTML-tags uit die worden gebruikt om een website te structureren en
-        inhoud te presenteren, deze structuur wordt gebruikt in heel veel website</h1>
+    <header>
+        <h1>CodeWoman</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Game</a></li>
+                <li><a href="manual.html">Uitleg Game</a></li>
+            </ul>
+        </nav>
+        <div class="intro-text">
+
+            <p>Welkom bij deze interactieve game over veelgebruikte HTML-tags! Ontdek de structuur van een website door
+                verschillende tags te verkennen. Gebruik de pijltjestoetsen om met CodeWoman naar de afbeeldingen te
+                gaan en leer meer over de HTML-tags en hun functies. Of je nu een ervaren webontwikkelaar bent of gewoon
+                nieuwsgierig bent naar HTML, deze game is perfect voor jou! Veel plezier met spelen en ontdekken!</p>
+        </div>
+    </header>
+
     <!-- This div element will move -->
     <div id="movingDiv" class="movingDiv">
 
 
         <div class="canvas">
             <div class="el">
-                <img src="../public/assets/img/woman.png" alt="">
+                <img src="../public/assets/img/cursor-svgrepo-com.svg" alt="Cursor">
             </div>
 
-            <div class="el element1">
+            <div data-item="html_audio" class="el element1">
                 <img src="../public/assets/img/html.png" alt="">
-                <p></p>
+                <audio id="audio">
+                    <source id="audioSource" src="../public/assets/sound/html_audio.m4a" type="audio/mpeg">
+                </audio>
+                <p>
+                    <code>
+                        <pre>&lt;html&gt;</pre>
+                    </code>
                 </p>
-
-</html>
-</p>
-</p>
-<audio id="audio">
-    <source id="audioSource" src="../public/assets/sound/audio1.m4a" type="audio/mpeg">
-</audio>
+            </div>
 
 
-</div>
-<div data-item="body" class="el element2">
-    <img src="../public/assets/img/app-development.png" alt="">
-    <p>
-        <code>
-            <pre>&lt;body&gt;</pre>
-        </code>
+            <div data-item="body_audio" class="el element2">
+                <img src="../public/assets/img/app-development.png" alt="">
+                <p>
+                    <code>
+                        <pre>&lt;body&gt;</pre>
+                    </code>
+                </p>
+                <audio id="audio">
+                    <source id="audioSource" src="../public/assets/sound/body_audio.m4a" type="audio/mpeg">
+                </audio>
+            </div>
 
-    </p>
-</div>
-<div data-item="developer" class="el element3">
-    <img src="../public/assets/img/developer.png" alt="">
-</div>
-
-
-<div class="el element5">
-    <img src="../public/assets/img/maintenance.png" alt="">
-</div>
-
-<div class="el element6">
-    <img src="../public/assets/img/messages.png" alt="">
-</div>
-
-<div class="el element7">
-    <img src="../public/assets/img/maintenance.png" alt="">
-</div>
-
-<div class="el element8">
-    <img src="../public/assets/img/css.png" alt="">
-</div>
-
-<div class="el element10">
-    <img src="../public/assets/img/portfolio.png" alt="">
-</div>
-
-</div>
+            <div data-item="footer_sound" class="el element3">
+                <img src="../public/assets/img/footer.png" alt="">
+                <p>
+                    <code>
+                        <pre>&lt;footer&gt;</pre>
+                    </code>
+                </p>
+                <audio id="audio">
+                    <source id="audioSource" src="../public/assets/sound/footer_sound.m4a" type="audio/mpeg">
+                </audio>
+            </div>
 
 
-</div>
+            <div data-item="head_audio" class="el element5">
+                <img src="../public/assets/img/messages.png" alt="">
+                <p>
+                    <code>
+                        <pre>&lt;head&gt;</pre>
+                    </code>
+                </p>
+                <audio id="audio">
+                    <source id="audioSource" src="../public/assets/sound/head_audio.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div data-item="article_sound" class="el element6">
+                <img src="../public/assets/img/note.png" alt="">
+                <p>
+                    <code>
+                        <pre>&lt;article&gt;</pre>
+                    </code>
+                </p>
+                <audio id="audio">
+                    <source id="audioSource" src="../public/assets/sound/article_sound.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div data-item="body_audio" class="el element7">
+                <img src="../public/assets/img/coding.png" alt="">
+                <p>
+                    <code>
+                        <pre>&lt;header&gt;</pre>
+                    </code>
+                </p>
+                <audio id="audio">
+                    <source id="audioSource" src="../public/assets/sound/body_audio.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div data-item="nav_sound" class="el element8">
+
+                <img src="../public/assets/img/programming.png" alt="">
+                <p>
+                    <code>
+                        <pre>&lt;nav&gt;</pre>
+                    </code>
+                </p>
+                <audio id="audio">
+                    <source id="audioSource" src="../public/assets/sound/nav_sound.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div data-item="head_audio" class="el element10">
+                <img src="./img/portfolio.png" alt="">
+                <p>
+                    <code>
+                        <pre>&lt;section&gt;</pre>
+                    </code>
+                </p>
+                <audio id="audio">
+                    <source id="audioSource" src="../public/assets/sound/head_audio.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div data-item="text_tags" class="el element11">
+                <img src="../public/assets/img/tag.png" alt="">
+                <p>
+                    <code>
+                        <pre>&lt;h1&gt; --> &lt;h6&gt;</pre>
+                    </code>
+                </p>
+                <audio id="audio">
+                    <source id="audioSource" src="../public/assets/sound/text_tags.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div data-item="video_sound" class="el element12">
+                <img src="../public/assets/img/digital-campaign.png" alt="">
+                <p>
+                    <code>
+                        <pre>&lt;video&gt; & &lt;img&gt;</pre>
+                    </code>
+                </p>
+                <audio id="audio">
+                    <source id="audioSource" src="../public/assets/sound/video_sound.m4a" type="audio/mpeg">
+                </audio>
+            </div>
+
+        </div>
 
 
-<div id="myBar"></div>
+    </div>
 
-
-
-
-<script src="../src/js/game.js"></script>
+    <div id="myBar"></div>
+    <script src="js/game.js"></script>
 </body>
 
 
