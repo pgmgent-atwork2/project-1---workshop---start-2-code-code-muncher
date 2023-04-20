@@ -2,7 +2,7 @@
 ### An interactive learning game, based around the HTML5 coding language.
 
 
-[Read the manual here]([https://www.google.com](https://pgmgent-atwork2.github.io/project-1---workshop---start-2-code-code-muncher/manual.html))
+[Read the manual here](https://pgmgent-atwork2.github.io/project-1---workshop---start-2-code-code-muncher/manual.html)
 #### *Application made for Artevelde University of Aplied Sciences* 
 #### *by Mila Duterloo and Brecht Van Damme*
 
