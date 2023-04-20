@@ -25,7 +25,8 @@
         <h2>#JAVASCRIPT</h2>
 
 
-        <h3>Dit is een stukje JavaScript-code dat wordt uitgevoerd wanneer de pagina volledig is geladen doormiddel van
+        <h3>Dit is een stukje JavaScript-code dat wordt uitgevoerd wanneer de pagina volledig is geladen doormiddel
+            van
             (window.onload).</h3>
         <span>Deze code haalt elementen op met de class 'el' en slaat ze op in de variabele otherElements met behulp van
             de
@@ -34,49 +35,81 @@
             allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
-        <h3>Laten we als eerst uitleggen hoe we de audio hebben gemaakt. We halen als eerst de dom elementen audio en
+        <span>Laten we als eerst uitleggen hoe we de audio hebben gemaakt. We halen als eerst de dom elementen audio en
             audio
-            source op doormiddel van getElementById.</h3>
+            source op doormiddel van getElementById.</span>
 
-        <iframe width="100%" height="300" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/9/embedded/js/dark/"
+        <iframe width="100%" height="%" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/9/embedded/js/dark/"
             allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
-
-        <h3>Hierop volgt een functie playSound deze functie gaat ervoor zorgen dat de juist audio wordt afgespeeld.</h3>
-
-        <iframe width="100%" height="300" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/9/embedded/js/dark/"
+        <span>Hierop volgt een functie playSound deze functie gaat ervoor zorgen dat de juist audio wordt
+            afgespeeld.</span>
+        <span>setAttribute zorgt ervoor dat de src vervangt naar de zin die daarop volgt ${type} zorgt ervoor dat daar
+            de
+            juiste data-item komt en dat de juiste geluid wordt afgespeeld</span>
+        <iframe width="100%" height="%" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/10/embedded/js/dark/"
             allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
-
-        <h3>setAttribute zorgt ervoor dat de src vervangt naar de zin die daarop volgt ${type} zorgt ervoor dat daar de
-            juiste data-item komt en dat de juiste geluid wordt afgespeeld</h3>
-
-
+        <span>currentTime zorgt ervoor dat het geluid vanaf het begint start.</span>
+        <iframe width="100%" height="%" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/12/embedded/js/dark/"
+            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
-        <h3>currentTime zorgt ervoor dat het geluid vanaf het begint start.</h3>
+        <span>De load() methode van het audio element laadt het audiobestand dat in de src attribuut is genoemd. Door
+            deze
+            methode aan te roepen, zorgt de browser ervoor dat het audiobestand wordt gedownload en klaar is om
+            afgespeeld te worden.
+        </span>
+        <iframe width="100%" height="%" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/13/embedded/js/dark/"
+            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
+        <span>De play() methode van het audio element start het afspelen van het audiobestand.</span>
+        <iframe width="100%" height="%" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/14/embedded/js/dark/"
+            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
-        <h3>De load() methode van het audio element laadt het audiobestand dat in de src attribuut is genoemd. Door
-            deze methode
-            aan te roepen, zorgt de browser ervoor dat het audiobestand wordt gedownload en klaar is om afgespeeld te
-            worden.
-        </h3>
+        <span>nu zetten we de breedte van de progress bar op 0%</span>
+        <iframe width="100%" height="%" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/15/embedded/js/dark/"
+            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
+        <span>Deze code zorgt voor interactie tussen het bewegende div-element en andere elementen op de pagina met een
+            dataset attribuut "item".</span>
+        <iframe width="100%" height="%" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/15/embedded/js/dark/"
+            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
 
 
-        <h3>De play() methode van het audio element start het afspelen van het audiobestand.</h3>
+        <span>Eerst wordt het bewegende div-element geselecteerd en de beginpositie wordt ingesteld op de bovenkant van
+            het scherm. </span>
+        <iframe width="100%" height="%" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/15/embedded/js/dark/"
+            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+
+        <span>Vervolgens wordt er een eventlistener toegevoegd aan het venster die reageert op de toetsen van het
+            toetsenbord. Wanneer er een toets wordt ingedrukt en losgelaten, wordt de functie uitgevoerd die de positie
+            van het bewegende div-element aanpast op basis van de toetsen die zijn ingedrukt.
+        </span>
+        <span>de elk nummer staat voor een toetsbord nummer</span>
+        <iframe width="100%" height="300" src="//jsfiddle.net/BrechtVanDamme04/837jtha0/16/embedded/js/dark/"
+            allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+
+        <span>Dit is een forEach-loop die over elk element in de otherElements array loopt.</span>
+        <span> Elk element worden de rechthoeken van de moveDiv en het element vergeleken om te controlerenof ze elkaar
+            overlappen dit wordt gecontroleerd door getBoundingClientRect() .</span>
+        <span> de elementen elkaar overlappen en als het element een dataset item heeft, dan wordt het type van het
+            element opgeslagen in een variabele en wordt playSound() en increaseProgressBar() functies aangeroepen met
+            type
+            als argument.</span>
     </section>
 
     <footer>
         <div class="thank">
             <h1>Thank you for playing!</h1>
-            <h3>We hopen dat je het leuk vond en iets geleerd hebt over programeren</h3>
+            <span>We hopen dat je het leuk vond en iets geleerd hebt over programeren</span>
         </div>
 
         <h5>Application made for <a href="https://www.arteveldehogeschool.be">Artevelde University of Aplied
