@@ -5,7 +5,7 @@ window.onload = function () {
     const audioSource = document.getElementById('audioSource');
 
     function playSound(type) {
-        audioSource.setAttribute('src', `../public/assets/sound/${type}.m4a`);
+        audioSource.setAttribute('src', `./public/assets/sound/${type}.m4a`);
         audio.currentTime = 0; // start the sound from the beginning
         audio.load();
         audio.play(); // play the sound
