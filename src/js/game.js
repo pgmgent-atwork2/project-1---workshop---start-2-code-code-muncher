@@ -15,6 +15,8 @@ window.onload = function () {
 
     // selecteer de elementen die we nodig hebben
 
+
+
     const progressBar = document.getElementById("myBar");
 
     // zet de breedte van de progress bar op 0%
@@ -26,6 +28,7 @@ window.onload = function () {
     }
 
 
+    //Deze code zorgt voor interactie tussen het bewegende div-element en andere elementen op de pagina met een dataset attribuut "item".
     const moveDiv = document.getElementById("movingDiv");
     moveDiv.style.top = '1rem';
     moveDiv.style.left = '0rem';
@@ -64,6 +67,8 @@ window.onload = function () {
                 increaseProgressBar(type);
             }
         });
+
+        //
 
 
 
