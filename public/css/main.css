@@ -129,14 +129,14 @@ p {
   border-radius: 50%;
 }
 
-.element1 {
+.html {
   position: fixed;
   top: 300px;
   left: 100px;
   height: 200px;
 }
 
-.element2 {
+.body {
   position: fixed;
   top: 400px;
   right: 100px;
@@ -145,23 +145,21 @@ p {
   border-radius: 50%;
 }
 
-.element3 {
+.footer {
   position: fixed;
   bottom: 50px;
   left: 50px;
   height: 100px;
-  background-color: #e0607e;
-  border-radius: 50%;
 }
 
-.element5 {
+.article {
   position: fixed;
   top: 350px;
   right: 600px;
   height: 120px;
 }
 
-.element6 {
+.head {
   position: fixed;
   bottom: 200px;
   right: 200px;
@@ -170,7 +168,7 @@ p {
 
 }
 
-.element7 {
+.navi {
   position: fixed;
   top: 600px;
   left: 200px;
@@ -179,27 +177,22 @@ p {
 
 }
 
-.element8 {
+.section {
   position: fixed;
   top: 500px;
   right: 900px;
-
   height: 160px;
-  border-radius: 50%;
-
 }
 
-.element9 {
+.header {
   position: fixed;
   bottom: 100px;
   right: 900px;
   height: 50px;
-  background-color: #a52a2a;
-  border-radius: 50%;
 }
 
 
-.element10 {
+.section {
   position: fixed;
   bottom: 150px;
   left: 400px;
@@ -207,17 +200,15 @@ p {
   height: 90px;
 }
 
-.element11 {
+.tag {
   position: fixed;
   bottom: 600px;
   left: 600px;
   width: 90px;
   height: 90px;
-  background-color: gray;
-  border-radius: 50%;
 }
 
-.element12 {
+.imgVid {
   position: fixed;
   bottom: 200px;
   left: 1000px;
